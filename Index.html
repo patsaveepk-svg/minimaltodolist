@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Coin Museum Thailand | Phra Nakhon Museums</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&amp;family=Be+Vietnam+Pro:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#090b0c",
+                    "surface-bright": "#f8f9fa",
+                    "on-primary-fixed-variant": "#2d476f",
+                    "error-container": "#ffdad6",
+                    "surface-container": "#edeeef",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "primary-fixed": "#d6e3ff",
+                    "surface-variant": "#e1e3e4",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "inverse-on-surface": "#f0f1f2",
+                    "on-secondary-container": "#785a1a",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#775a19",
+                    "on-surface": "#191c1d",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "primary-fixed-dim": "#aec7f6",
+                    "secondary-fixed-dim": "#e9c176",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "on-surface-variant": "#44474e",
+                    "surface-container-highest": "#e1e3e4",
+                    "secondary-container": "#fed488",
+                    "on-tertiary-container": "#888989",
+                    "surface-tint": "#465f88",
+                    "surface-container-high": "#e7e8e9",
+                    "on-primary": "#ffffff",
+                    "primary": "#000a1e",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed": "#e2e2e2",
+                    "primary-container": "#002147",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#202222",
+                    "on-background": "#191c1d",
+                    "on-primary-container": "#708ab5",
+                    "outline-variant": "#c4c6cf",
+                    "outline": "#74777f",
+                    "on-primary-fixed": "#001b3d",
+                    "background": "#f8f9fa",
+                    "on-secondary-fixed": "#261900",
+                    "surface-container-low": "#f3f4f5",
+                    "surface": "#f8f9fa",
+                    "secondary-fixed": "#ffdea5",
+                    "inverse-surface": "#2e3132",
+                    "surface-dim": "#d9dadb",
+                    "inverse-primary": "#aec7f6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "1.5rem",
+                    "container-max": "1280px",
+                    "unit-xs": "0.25rem",
+                    "unit-xl": "4rem",
+                    "margin-mobile": "1rem",
+                    "unit-md": "1rem",
+                    "unit-lg": "2rem",
+                    "section-padding": "5rem",
+                    "unit-sm": "0.5rem"
+            },
+            "fontFamily": {
+                    "label-caps": ["Be Vietnam Pro"],
+                    "display-xl": ["Noto Serif"],
+                    "headline-md": ["Noto Serif"],
+                    "body-lg": ["Be Vietnam Pro"],
+                    "body-md": ["Be Vietnam Pro"],
+                    "headline-lg": ["Noto Serif"]
+            },
+            "fontSize": {
+                    "label-caps": ["0.75rem", {"lineHeight": "1", "letterSpacing": "0.15em", "fontWeight": "700"}],
+                    "display-xl": ["4.5rem", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["1.75rem", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["1.125rem", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["1rem", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["2.5rem", {"lineHeight": "1.2", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .text-shadow-premium {
+            text-shadow: 0 2px 4px rgba(0, 33, 71, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-surface-bright text-on-surface font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+<nav class="flex justify-between items-center max-w-[1280px] mx-auto px-8 h-20">
+<div class="text-xl font-bold text-[#002147] tracking-tighter">Phra Nakhon Museums</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-['Noto_Serif'] font-medium uppercase tracking-wide text-sm text-slate-600 hover:text-[#002147] transition-colors" href="#">Home</a>
+<a class="font-['Noto_Serif'] font-medium uppercase tracking-wide text-sm text-[#002147] border-b-2 border-amber-500 pb-1" href="#">Museums</a>
+<a class="font-['Noto_Serif'] font-medium uppercase tracking-wide text-sm text-slate-600 hover:text-[#002147] transition-colors" href="#">Travel Guide</a>
+<a class="font-['Noto_Serif'] font-medium uppercase tracking-wide text-sm text-slate-600 hover:text-[#002147] transition-colors" href="#">Map</a>
+<a class="font-['Noto_Serif'] font-medium uppercase tracking-wide text-sm text-slate-600 hover:text-[#002147] transition-colors" href="#">Reviews</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-[#002147]">search</button>
+<button class="bg-primary-container text-white px-5 py-2 font-['Noto_Serif'] text-sm uppercase tracking-wider hover:opacity-90 transition-opacity">AI Trip Planner</button>
+</div>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[819px] w-full flex items-end overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A grand cinematic view of the Coin Museum Thailand interior, showcasing a high-contrast architectural space where modern display cases meet classical Thai design. The lighting is focused and dramatic, highlighting ancient gold coins against deep navy velvet backgrounds. The atmosphere is quiet, prestigious, and deeply historical, reflecting a premium cultural journal aesthetic. Warm golden highlights from focused spotlights create a sophisticated glow throughout the gallery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvyL6exR7KHFb4QiB87fIa60k7k9ldtKVK2KIOCtEQrKTe5ZYjPlDABtnnfw5p9q6rS-E31KDQnnG1cEIuOAYn8J4AD5YQR2wvUTEWNA155isAxivyCXbURujkozmRQGy1J6YJfI2BpLHBBPbewtXjasnFEpxcRndGH2f_tuuLlgqPnDxcwNM_v1gRqlwqriENKe5guZTB-828oE-iYK667hX5iBQ7_3BMV1nTjkWUJ7IpFfJo67Yx98CM0VCyqR3SFPAF27hLCR0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/20 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-[1280px] mx-auto px-8 pb-16 w-full">
+<span class="inline-block px-4 py-1 mb-6 bg-secondary text-on-secondary font-label-caps text-label-caps">NUMISMATIC HERITAGE</span>
+<h1 class="font-display-xl text-display-xl text-white mb-4 max-w-3xl leading-tight">Coin Museum Thailand</h1>
+<p class="font-body-lg text-body-lg text-slate-300 max-w-xl">Tracing the evolution of value and exchange in the Kingdom of Thailand, from ancient primitive currency to the intricate minting of the modern era.</p>
+</div>
+</section>
+<!-- Practical Info Quick Bar -->
+<section class="bg-white py-12 border-b border-surface-variant">
+<div class="max-w-[1280px] mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-3xl">schedule</span>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-1">OPENING HOURS</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Tue – Sun: 10:00 - 18:00<br/>Closed on Mondays</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-3xl">payments</span>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-1">TICKET PRICES</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Adults: 100 THB<br/>Foreigners: 200 THB</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-3xl">location_on</span>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-1">LOCATION</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Chakrabongse Road, Bangkok<br/>Near Khao San Road</p>
+</div>
+</div>
+<div class="flex items-center">
+<button class="w-full py-4 bg-primary-container text-white font-label-caps text-label-caps hover:bg-primary transition-colors flex justify-center items-center gap-2">
+                        BOOK A GUIDED TOUR <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Main Narrative Section -->
+<section class="py-section-padding bg-surface-bright">
+<div class="max-w-[1280px] mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-7">
+<div class="w-20 h-1 bg-secondary mb-8"></div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8">The Chronology of Thai Currency</h2>
+<div class="space-y-6 font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+<p>The journey begins in the shadows of prehistory, where the concept of trade was born through the exchange of natural tokens—beads, shells, and silver bars. The Coin Museum masterfully narrates how these primitive forms of exchange evolved into the iconic 'Pod Duang' or bullet coins of the Ayutthaya period.</p>
+<p>Visitors are led through the pivotal transition during the reign of King Rama IV, as Thailand modernized its currency to align with international standards, introducing the first flat coins and the sophisticated minting technology of the Royal Thai Mint.</p>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] bg-white p-4 shadow-[30px_30px_60px_-15px_rgba(0,33,71,0.08)]">
+<img class="w-full h-full object-cover" data-alt="A macro photography shot of ancient Thai 'Pod Duang' bullet coins resting on a dark velvet surface. The lighting is soft and directional, accentuating the metallic texture and the royal marks stamped into the silver. The background is a blurred, minimalist museum setting with subtle warm tones, maintaining a high-end editorial aesthetic centered on numismatic detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE53xKQRtRjm8_NBYxvd5irn3jzjt6k-0lxio_4DEeFnpJ4LH5ArulCeJpw3jR97Ss53B1pDHJ7jaMH_JuwLdNWmpJiOMhSB6DknzM9oYZgAqPOQIFuEGyTyplbVvmgauyqUf0bH5u8qgaKsOO56DcCm2maGKO32EvYUahyXjecqW1CdUbEhCwG6HdskSTCV6vuwZkXIQX0A2uFdLYvNPmjcrccHONcCsdLrzcrGdmAPC4qlVdf6ib-XhRE_wgz11aXnd6acAhLO4"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-secondary p-8 text-white hidden md:block">
+<p class="font-display-xl text-3xl italic">"History in your hands."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Bento Grid -->
+<section class="py-section-padding bg-white">
+<div class="max-w-[1280px] mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Immersive Experiences</h2>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">Beyond static displays, the museum offers sensory journeys into the heart of numismatic production and history.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Feature 1: Cave of Coins -->
+<div class="md:col-span-2 group relative h-[500px] overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A breathtaking view of the Cave of Coins exhibition at the Coin Museum Thailand. The room is a dark, immersive space with high-tech 360-degree projections of ancient coins raining down. The floor and walls appear as if carved from stone, illuminated by deep golden ambient lighting. It is a sophisticated blend of digital installation art and historical education." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqsgsS672yOGVgSh6_la--BGj_TSz6Lm0cDFD_qwaOvgjrGPcBKfNWO1pV8R9KCXjF_nT_5ol18YCWZ8IQFexkzeDUhyHfFqg_WenR5LcBXZ61T5O4hzAqeTvn6t4nJH_3H8lK0uzoLCe6Rnmc1ZHYfu4to50b5ITXiubhG2oHwghDleKt5mjT0Ri-RRx_yDrQdgaBHvZLuIt83M8WmVCTFViSuyBxUMMEKcdE_lxt-8-sU2ydi8FmRBaA1xI9fcRWfsNEuM8lzUs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10">
+<span class="font-label-caps text-label-caps text-secondary-fixed mb-2 block">SIGNATURE EXPERIENCE</span>
+<h3 class="font-headline-md text-headline-md text-white mb-4">The "Cave of Coins"</h3>
+<p class="font-body-md text-slate-200 max-w-md">An immersive 4D presentation that transports visitors back to the origin of currency, using cutting-edge projection mapping to bring ancient trade routes to life.</p>
+</div>
+</div>
+<!-- Feature 2: Demonstration -->
+<div class="bg-surface-container p-10 flex flex-col justify-between border-l-4 border-secondary">
+<div>
+<span class="material-symbols-outlined text-4xl text-secondary mb-6" data-weight="fill">precision_manufacturing</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Live Demonstrations</h3>
+<p class="font-body-md text-on-surface-variant">Witness the craft of coin manufacturing. Expert artisans demonstrate traditional hammering techniques and modern minting precision.</p>
+</div>
+<div class="pt-8">
+<a class="inline-flex items-center gap-2 text-secondary font-label-caps text-label-caps hover:gap-4 transition-all" href="#">
+                                LEARN THE CRAFT <span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+</div>
+<!-- Feature 3: Archive -->
+<div class="group relative h-[400px] overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="The royal coin archive at the Coin Museum Thailand. Rows of minimalist white drawers and glass cases display rare gold coins and historical minting tools. The lighting is clean, bright, and gallery-like, emphasizing a sterile yet elegant environment where history is preserved. The composition is clean and architectural." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkQ-fB4MJtyZ0av2wuCA5CGumVpBRHfqFrSs68SFtS5BoahXvF8RrgRl3ArKhul-KAa6Uyi79Jl4NpfEl9wd5yQ2kxbu4MkOkDY_GO_EECVR3M68n-ypO3gljGd51TaXE2bvrqWl3vTDZvq_h4crNP2Xu1j5Bf1TWAV0fb5KZq47Ogt3p87nftB5qNIGMeea0Nrq6lcydWrqF_JCg2ThiwkNCXP7DtUWSZ7t_OCJYBYKmmpWmqmp5D0lQZnGdnbvixH_ypAadknqY"/>
+<div class="absolute inset-0 bg-primary-container/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="text-center p-6">
+<h4 class="text-white font-headline-md mb-2">The Royal Archive</h4>
+<p class="text-white/80 font-body-md">Private viewing of rare artifacts</p>
+</div>
+</div>
+</div>
+<!-- Feature 4: Educational -->
+<div class="md:col-span-2 bg-primary-container p-10 text-white flex flex-col md:flex-row items-center gap-8">
+<div class="flex-1">
+<h3 class="font-headline-md text-headline-md mb-4 text-amber-400">Educational Workshops</h3>
+<p class="font-body-md text-on-primary-container mb-6">Designed for students and enthusiasts alike, our workshops explore the economics of history and the art of engraving.</p>
+<button class="border border-amber-400 text-amber-400 px-6 py-3 font-label-caps text-label-caps hover:bg-amber-400 hover:text-primary-container transition-all">REGISTER NOW</button>
+</div>
+<div class="w-full md:w-1/3 aspect-video md:aspect-square bg-white/10 flex items-center justify-center backdrop-blur-sm">
+<span class="material-symbols-outlined text-6xl text-amber-400/50">school</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Location & Map -->
+<section class="py-section-padding bg-surface-bright">
+<div class="max-w-[1280px] mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-4 space-y-8">
+<h2 class="font-headline-lg text-headline-lg text-primary">Visit Us</h2>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary">map</span>
+<p class="font-body-md text-on-surface-variant">101 Chakrabongse Rd, Talat Yot, Phra Nakhon, Bangkok 10200, Thailand</p>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary">train</span>
+<p class="font-body-md text-on-surface-variant">MRT Sam Yot Station (Short taxi ride or 20min walk)</p>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary">phone</span>
+<p class="font-body-md text-on-surface-variant">+66 2 282 0818</p>
+</div>
+</div>
+<div class="p-6 bg-white shadow-sm border-l-4 border-secondary">
+<h4 class="font-label-caps text-label-caps text-primary mb-2">PRO TIP</h4>
+<p class="font-body-md text-on-surface-variant italic">Combine your visit with the National Gallery just a 5-minute walk away for a full day of heritage.</p>
+</div>
+</div>
+<div class="lg:col-span-8 h-[500px] bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="A clean, minimalist map rendering of the Phra Nakhon district in Bangkok, focusing on the area around the Coin Museum. The map uses a sophisticated color palette of soft grays and blues, with the museum clearly marked in a signature gold pin. Key landmarks like the Grand Palace and Khao San Road are subtly indicated to provide context." data-location="Bangkok, Phra Nakhon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD44Nh5UXa9X-sYkp36_29F4oKXzhUWf5YCdbjOLZ2V5hhTIEFx5PWncpgdJa53yuKNUrqQuvDdgIL31Kj64FAglJzgqLeNMb4x2f-yhKkGiF-Vw8UAFUxVo0UdwRJkE4P6eHhStp8tjRTO45wsPWNCRfTP9sMs2PdwYYog5PaU7bshDVufZr1E11wsbNMKTq-MSrNarU9Z7fSjUmiz9VhU0I0Bkq8z7yLXYAqmn-mzJ_ombllbbJBelZMPqEEHiK8aLTtY4gzmpe0"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#002147] text-white w-full py-16">
+<div class="max-w-[1280px] mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12">
+<div>
+<span class="text-lg font-bold text-amber-400 mb-4 block">Phra Nakhon Museums</span>
+<p class="font-['Noto_Serif'] text-sm leading-relaxed text-slate-300">Preserving the vibrant history of Bangkok through curated experiences and architectural storytelling.</p>
+</div>
+<div class="flex flex-col space-y-3">
+<h4 class="font-label-caps text-label-caps text-white mb-2">QUICK LINKS</h4>
+<a class="font-['Noto_Serif'] text-sm text-slate-300 hover:text-white transition-colors" href="#">About Us</a>
+<a class="font-['Noto_Serif'] text-sm text-slate-300 hover:text-white transition-colors" href="#">Contact</a>
+<a class="font-['Noto_Serif'] text-sm text-slate-300 hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="font-['Noto_Serif'] text-sm text-slate-300 hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-white mb-4">SOCIAL MEDIA</h4>
+<div class="flex gap-4">
+<a class="text-slate-300 hover:text-amber-400 transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-slate-300 hover:text-amber-400 transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-slate-300 hover:text-amber-400 transition-colors" href="#"><span class="material-symbols-outlined">camera_enhance</span></a>
+</div>
+<div class="mt-8 text-xs text-slate-400">
+                    © 2024 Phra Nakhon Museums. All rights reserved. Heritage &amp; History of Bangkok.
+                </div>
+</div>
+</div>
+</footer>
+</body></html>
